@@ -240,9 +240,9 @@ pointer-events:none;
 
 <!-- welcome -->
 <section class="card active">
-<h1>Special gift</h1>
-<p>For someone i love the most. <br>But you have to unlock it.</p>
-<button onclick="next()">Unlock</button>
+<h1>Hi love</h1>
+<p>come closer and open this for me.</p>
+<button onclick="next()">Open</button>
 </section>
 
 <!-- pin -->
@@ -336,7 +336,7 @@ if(page===2)loadQuestion();
 ================================================= */
 
 let pinInput = '';
-const correctPin = '1402';
+const correctPin = '1234';
 const pinDisplay = document.getElementById("pin");
 
 function renderDots(){
@@ -384,9 +384,9 @@ function checkPin(){
 ================================================= */
 
 const questions=[
-{q:"When did we first meet? ", options:["14 February"," 24 January","22 January"],correct:2},
+{q:"When did we first meet? ", options:["February","January","May"],correct:2},
 {q:"Who loves the most?", options:["You","100% me","Both"],correct:2},
-{q:"What’s on my mind most of the time?", options:["Anime","Someone else","You (my pretty girlfriend"],correct:2}
+{q:"What’s on my mind most of the time?", options:["Game","Someone else","You (my pretty girlfriend"],correct:2}
 ];
 
 let currentQ = 0;
@@ -451,7 +451,7 @@ function checkAnswer(i,btn){
 
 function startTimer(){
 
-    const start = new Date("2026-01-22T00:00:00");
+    const start = new Date("2026-06-10T00:00:00");
 
     setInterval(()=>{
 
@@ -485,12 +485,8 @@ function revealMemory(el){
     `;
 
     const text = `
-      Even all the beautiful words in the world still wouldn’t be enough to explain how much you mean to me. Yet here you are, right in my life, and somehow that alone says everything. I admire the little things about you—the way you care about me, the way you talk, and how your eyes light up when you’re excited, especially when it’s with me. 
-
-      With you, I’ve found a kind of peace I didn’t even know I was looking for. It’s a kind of comfort I didn’t know I needed until I found it in you. It’s something I can’t find anywhere else, no matter how hard I try. Every moment with you, no matter how small, feels important and meaningful.
-      
-      Thank you for being here with me, for every moment, every word, and every feeling we’ve shared. Happy 2nd mensiversary, sayangku. I’m so grateful for you, today and always. ❤️  
-      `;
+    Dear Serlynne Mitchell, i just wanna say thank you for always being here for me. Having you in my life makes everything feel softer and more colorful, and your presence always brings me comfort in ways i can’t explain properly. Thank you for loving me patiently, listening to my stories, and staying beside me through every mood and situation. Honestly, meeting you was one of the best things that ever happened to me, and i’m really grateful for it. 
+    `;
 
     const paragraphs = text.trim().split(/\n\s*\n/);
 
